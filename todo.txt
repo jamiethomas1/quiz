@@ -1,0 +1,22 @@
+set up button event listener or something - just so something happens when you press the button
+
+add a 'confirm answer' button so that selecting an answer doesn't commit you straight away
+
+when answer has been confirmed, colour the buttons red and green to show right and wrong answers, add a marker to show which option the player selected, and change confirm answer button to a 'next question' button which just refreshes the page
+
+-------------------------------------------------------------
+
+after all the functional stuff is done:
+
+fix centering of list if possible - currently just 45% aligned horizontally - not responsive to length of answers
+
+make buttons look less 1990
+
+create a few different colour schemes to make it  more interesting - not just random colours for everything, that would look awful
+
+
+--------------------------------------------------------------
+
+only after all that stuff, if there's still time, do this
+
+add some settings to change the api properties (e.g. change category or difficulty)
