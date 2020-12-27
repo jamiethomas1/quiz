@@ -1,4 +1,4 @@
-const url = "https://opentdb.com/api.php?amount=1&category=9&difficulty=medium"
+const url = "https://opentdb.com/api.php?amount=1"
 
 const request = require('request');
 //const io = require('console-read-write');
