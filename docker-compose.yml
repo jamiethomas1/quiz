@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  laravel:
+    build:
+      context: ./quiz-backend
+      dockerfile: Dockerfile
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./quiz-backend:/var/www/html
+    networks:
+      - backend
+  react:
+    build:
+      context: ./quiz-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"  # adjust the ports as needed
+    networks:
+      - frontend
+      - backend
+    depends_on:
+      - laravel
+
+networks:
+  frontend:
+  backend:
